@@ -1,16 +1,18 @@
-class Personagem:
+class Personagem(object):
 
-    def __init__(self,nome,atributo):
-        self.vida = 5
+    def __init__(self):
+        self.__vida = 5 
+        self.__nome = ""
 
 
     def getVida():
-        return self.vida
+        return self.__vida
 
-    def setNome(nome):
-        self.nome = nome    
-    def getNome():
-        return self.nome 
+    def setNome(self,nome):
+        self.__nome = nome    
+
+    def getNome(self):
+        return self.__nome 
 
     def getAtributo():
         return self.atributo   
