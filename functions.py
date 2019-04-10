@@ -8,10 +8,24 @@ def filtraString(resp):
     else:
         return x[0]
 
-def filtraNum(resp):
+def filtraNum(resp,rang):
     x = re.findall(r'\d+',resp)
-    if(len(x)== 0 or int(x[0])>2):
+    if(len(x)== 0 or range(int(x[0]),rang) == False):
         return "Opcao Invalida"
     else:
         return x[0]
+
+def range(num,range):
+    if num > range:
+        return False
+    else:
+        return True
+
+def filtraSimOuNao(resp):
+    if resp == 'sim':
+        return True
+    elif resp == 'nao':
+        return True
+    else:
+        return False
 

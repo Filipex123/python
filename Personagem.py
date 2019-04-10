@@ -22,7 +22,7 @@ class Personagem(object):
          self.__atributo = atributo
 
     def dano(self,qtd):
-        if (__vida - qtd >=0):
+        if (self.__vida - qtd >=0):
             self.__vida -= qtd
         else:
             print("Voce esta morto")
