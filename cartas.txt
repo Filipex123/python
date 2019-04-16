@@ -9,3 +9,4 @@ tie figther/1300/1200
 luciano hulk/1500/800
 bob esponja/600/300
 batman/1600/1500
+jaoson/2000/1200
